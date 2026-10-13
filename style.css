@@ -1,11 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 .borderGame {
   border: 1px solid red;
   width: 1000px;
   height: 600px;
+  margin: 10px;
+  position: relative;
 }
-.obstaculo {
+#obstaculo {
   position: absolute;
+  bottom: 0;
+  animation: mov-obstaculo 3.5s infinite linear;
 }
-.personagem {
+#personagem {
   position: absolute;
+  bottom: 0;
+  animation: pulo-personagem 700ms ease-in-out ;
+}
+
+@keyframes mov-obstaculo {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes pulo-personagem {
+  0% {
+    bottom: 0px;
+  }
+  25% {
+    bottom: 100px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  75% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
