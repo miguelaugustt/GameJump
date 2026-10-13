@@ -1,0 +1,11 @@
+.borderGame {
+  border: 1px solid red;
+  width: 1000px;
+  height: 600px;
+}
+.obstaculo {
+  position: absolute;
+}
+.personagem {
+  position: absolute;
+}
