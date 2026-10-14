@@ -25,6 +25,7 @@ const posicoesLoop = setInterval(() => {
     obstaculo.style.left = `${posicaoObstaculo}px`;
 
     personagem.style.animation = "none";
+    personagem.style.bottom = `${posicaoPersonagemY}`;
   }
 }, 1);
 
