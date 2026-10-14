@@ -15,9 +15,12 @@
   animation: mov-obstaculo 3.5s infinite linear;
 }
 #personagem {
+  left: 30px;
   position: absolute;
-  bottom: 0;
-  animation: pulo-personagem 700ms ease-in-out ;
+  bottom: 0px;
+}
+.pulo {
+  animation: pulo-personagem 900ms ease-in-out;
 }
 
 @keyframes mov-obstaculo {
