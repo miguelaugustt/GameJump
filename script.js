@@ -6,7 +6,7 @@ const pulo = () => {
 
   setTimeout(() => {
     personagem.classList.remove("pulo");
-  }, 900);
+  }, 1000);
 };
 
 const posicoesLoop = setInterval(() => {
@@ -17,9 +17,9 @@ const posicoesLoop = setInterval(() => {
     .bottom.replace("px", "");
 
   if (
-    posicaoObstaculo >= -30 &&
-    posicaoObstaculo <= 85 &&
-    posicaoPersonagemY <= 67
+    posicaoObstaculo >= -50 &&
+    posicaoObstaculo <= 155 &&
+    posicaoPersonagemY < 134
   ) {
     obstaculo.style.animation = "none";
     obstaculo.style.left = `${posicaoObstaculo}px`;
